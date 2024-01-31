@@ -29,7 +29,7 @@ border-radius:8px;
 `;
 export const ButtonText = Styled.Text`
 color:${TextColor.d_white};
-font-size: ${FontSize.m};
+font-size: ${FontSize.m}px;
 font-weight: 900;
 `;
 export const RecoveryPassword = Styled.View`
@@ -46,13 +46,13 @@ justify-content: center;
 export const RecoveryPasswordTextButton = Styled.Text`
 padding: ${ViewPad.m}px;
 color: ${TextColor.d_white};
-font-size: ${FontSize.s};
+font-size: ${FontSize.s}px;
 `;
 export const Footer = Styled.View`
 align-self: center;
-margin-top: 150px;
 `;
 export const FooterText = Styled.Text`
 color: ${TextColor.d_white};
 font-size: ${FontSize.m}px;
+opacity: 0.5;
 `;

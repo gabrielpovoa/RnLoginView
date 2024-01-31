@@ -6,11 +6,20 @@ import { TextColor, Theme } from "../../theme/Theming";
 type Props = {
   userRegistry: string;
   userPassword: string;
+  onHandleLogin:()=>void;
   onHandleRegistryChange: (item: string) => void;
   onHandlePasswordChange: (item: string) => void;
 };
 
-export const Screen = ({ userRegistry, userPassword, onHandleRegistryChange, onHandlePasswordChange}:Props) => {
+export const Screen = ({
+  userRegistry,
+  userPassword,
+  onHandleRegistryChange,
+  onHandlePasswordChange,
+  onHandleLogin,
+}: Props) => {
+
+
   return (
     <>
       <S.View>
@@ -25,16 +34,19 @@ export const Screen = ({ userRegistry, userPassword, onHandleRegistryChange, onH
           placeholder="Enter your Password"
           value={userPassword}
           onChangeText={(param) => onHandlePasswordChange(param)}
+          secureTextEntry
         />
-        <S.SubmitButton>
+        <S.SubmitButton  onPress={onHandleLogin}>
           <S.ButtonText>
-          {/* <ActivityIndicator size="small" color={TextColor.d_yellow}/> */}
-             Log in 🧀!
-            </S.ButtonText>
+            {/* <ActivityIndicator size="small" color={TextColor.d_yellow}/> */}
+            Log in 🧀!
+          </S.ButtonText>
         </S.SubmitButton>
         <S.RecoveryPassword>
           <S.RecoveryPasswordButton>
-            <S.RecoveryPasswordTextButton>Recovery Password</S.RecoveryPasswordTextButton>
+            <S.RecoveryPasswordTextButton>
+              Recovery Password
+            </S.RecoveryPasswordTextButton>
           </S.RecoveryPasswordButton>
         </S.RecoveryPassword>
         <S.Footer>

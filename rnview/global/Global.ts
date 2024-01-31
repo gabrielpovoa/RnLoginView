@@ -6,6 +6,12 @@ export const GlobalAreaView = Styled.SafeAreaView`
 align-items: center;
 background-color: ${Theme.light};
 `;
+
+export const AlertMessage = Styled.Text`
+color: ${TextColor.d_yellow};
+font-weight: 700;
+`;
+
 export const View = Styled.View`
 background-color: ${Background.secondary};
 border-radius:50%;
@@ -37,7 +43,7 @@ font-weight: 700;
 
 `;
 export const SpanText = Styled.Text`
-font-size: ${FontSize.m};
+font-size: ${FontSize.m}px;
 color: ${TextColor.d_yellow};
 font-weight: 500;
 `;

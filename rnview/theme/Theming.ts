@@ -7,6 +7,7 @@ export const Background = {
   primary: "#2C2A4A",
   secondary: "#3E78B2",
   tertiary: "#F1F1F1",
+  quaternary: " rgba(193, 193, 193, 0.3);",
 };
 
 export const FontStize = {
@@ -23,7 +24,8 @@ export const ButtonColors = {
 export const TextColor = {
   d_white: "#FFFF",
   d_blue: "#004BA8",
-  l_black: "#0700",
+  d_blue_light: "#3E78B2",
+  l_black: "#000",
   l_blue: "#084887",
   d_yellow: "#FFBE0B",
 };
