@@ -6,7 +6,7 @@ import { TextColor, Theme } from "../../theme/Theming";
 type Props = {
   userRegistry: string;
   userPassword: string;
-  onHandleLogin:()=>void;
+  onHandleLogin: () => void;
   onHandleRegistryChange: (item: string) => void;
   onHandlePasswordChange: (item: string) => void;
 };
@@ -18,8 +18,6 @@ export const Screen = ({
   onHandlePasswordChange,
   onHandleLogin,
 }: Props) => {
-
-
   return (
     <>
       <S.View>
@@ -36,11 +34,8 @@ export const Screen = ({
           onChangeText={(param) => onHandlePasswordChange(param)}
           secureTextEntry
         />
-        <S.SubmitButton  onPress={onHandleLogin}>
-          <S.ButtonText>
-            {/* <ActivityIndicator size="small" color={TextColor.d_yellow}/> */}
-            Log in 🧀!
-          </S.ButtonText>
+        <S.SubmitButton onPress={onHandleLogin}>
+          <S.ButtonText>Log in 🧀</S.ButtonText>
         </S.SubmitButton>
         <S.RecoveryPassword>
           <S.RecoveryPasswordButton>
@@ -50,7 +45,7 @@ export const Screen = ({
           </S.RecoveryPasswordButton>
         </S.RecoveryPassword>
         <S.Footer>
-          <S.FooterText>Made my Mr Mouse</S.FooterText>
+          <S.FooterText>Made my João Gabriel Póvoa ©️</S.FooterText>
         </S.Footer>
       </S.View>
     </>

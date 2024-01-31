@@ -6,8 +6,8 @@ import { ScrollView, Text } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 const Home = () => {
-  const [loginRegistry, setloginRegistry] = useState("t600295");
-  const [loginPassWord, setloginPassword] = useState("123");
+  const [loginRegistry, setloginRegistry] = useState("");
+  const [loginPassWord, setloginPassword] = useState("");
   const [showErr, setShowErr] = useState(false);
 
   const { navigate } = useNavigation();
