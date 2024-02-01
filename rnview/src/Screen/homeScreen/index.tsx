@@ -16,7 +16,7 @@ const HomeScreen = () => {
         <S.HeadingText>Rats 🐀</S.HeadingText>
       </S.Container>
       <S.FeaturedTag>
-        <S.FeatureText>Fetured</S.FeatureText>
+        <S.FeatureText>📌 Featured</S.FeatureText>
       </S.FeaturedTag>
 
       <FlatList

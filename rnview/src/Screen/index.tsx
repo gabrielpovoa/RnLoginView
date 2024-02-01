@@ -20,7 +20,7 @@ export const Screen = ({
 }: Props) => {
   return (
     <>
-      <S.View>
+      <S.View style={{flex:1}}>
         <S.Label>Enter Your Registry</S.Label>
         <S.Input
           placeholder="Enter your registry"
